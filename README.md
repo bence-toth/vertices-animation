@@ -28,7 +28,7 @@ verticesAnimation('idOfTheCanvas')
 
 There are certain options you can override by passing an object as second argument to `verticesAnimation`:
 ```
-verticesAnimation('canvas', {
+verticesAnimation('idOfTheCanvas', {
   pixelsPerDot: 13500,
   dotColor: '#969696',
   dotSize: {min: 2, max: 6},
