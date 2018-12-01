@@ -14,7 +14,7 @@ The animation was designed to take the entirety of the viewport, but it could be
 
 ## Usage
 
-1) Download `vertices-animation.js` and import it in your HTML file (or if you are working with node applications ore something similar, just lift it in your code base).
+1) Download `vertices-animation.js` and import it in your HTML file (or if you are working with node applications or something similar, just lift it in your code base).
 
 2) Add a `canvas` to your HTML, ideally directly inside the `body` and give it an `id`.
 
@@ -24,18 +24,18 @@ The animation was designed to take the entirety of the viewport, but it could be
 verticesAnimation('idOfTheCanvas')
 ```
 
-## Configuration
+## Customization
 
 There are certain options you can override by passing an object as second argument to `verticesAnimation`:
 ```
 verticesAnimation('canvas', {
   pixelsPerDot: 13500,
-  dotColor: '#969696', // color in hex format
-  dotSize: {min: 2, max: 6}, // pixels per frame
-  dotSpeed: {min: 2, max: 2.1}, // pixels per frame
-  dotCourseDeviations: 0.05, // radians
-  vertexColor: '#000000', // color in hex format
-  maxVertexLength: 0.2 // % of viewport diagonal
+  dotColor: '#969696',
+  dotSize: {min: 2, max: 6},
+  dotSpeed: {min: 2, max: 2.1},
+  dotCourseDeviations: 0.05,
+  vertexColor: '#000000',
+  maxVertexLength: 0.2
 })
 ```
 
