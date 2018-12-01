@@ -12,7 +12,7 @@ const verticesAnimation = (canvasId, options = {}) => {
 
   const diagonalLength = (horizontalLength, verticalLength) => {
     const {sqrt, pow} = Math
-  	return sqrt(pow(horizontalLength, 2) + pow(verticalLength, 2)) // Pythagoras, go!
+    return sqrt(pow(horizontalLength, 2) + pow(verticalLength, 2)) // Pythagoras, go!
   }
 
   const calculateCanvasPadding = () =>
@@ -23,7 +23,7 @@ const verticesAnimation = (canvasId, options = {}) => {
 
   const createRandomDot = ({canvasWidth, canvasHeight}) => {
     const {round, random, PI: π} = Math
-  	const canvasPadding = calculateCanvasPadding()
+    const canvasPadding = calculateCanvasPadding()
     return ({
       x: round(randomBetween(-canvasPadding, canvasWidth + canvasPadding)),
       y: round(randomBetween(-canvasPadding, canvasHeight + canvasPadding)),
@@ -149,7 +149,7 @@ const verticesAnimation = (canvasId, options = {}) => {
     clearCanvas({context, canvas})
     drawVertices({context, dots})
     drawDots({context, dots})
-  	requestAnimationFrame(() => draw({canvas, context, dots}))
+    requestAnimationFrame(() => draw({canvas, context, dots}))
   }
 
   const init = () => {
