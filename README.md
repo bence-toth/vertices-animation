@@ -1,6 +1,6 @@
 # Vertices animation
 
-**An experiment implementing an animation of moving dots and vertices connecting them.**
+**An experiment implementing an animation of moving dots and vertices connecting them. It looks sorta cool.**
 
 The experiment uses HTML `canvas` and has no dependencies.
 
