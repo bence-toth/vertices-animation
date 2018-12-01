@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+  <meta charset="utf-8" />
+  <title>Web animation with canvas</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-size: 0;
+    }
+    html, body, #canvas {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head><body>
+  <canvas id="canvas"></canvas>
+  <script src="vertices-animation.js"></script>
+  <script>
+    verticesAnimation('canvas', {
+      pixelsPerDot: 13500, // dot density, higher value = fewer dots, don't go below 5000
+      dotColor: '#969696', // color in hex format
+      dotSize: {min: 2, max: 6}, // pixels per frame
+      dotSpeed: {min: 2, max: 2.1}, // pixels per frame
+      dotCourseDeviations: 0.05, // radians
+      vertexColor: '#000000', // color in hex format
+      maxVertexLength: 0.2 // % of viewport diagonal
+    })
+  </script>
+</body></html>
